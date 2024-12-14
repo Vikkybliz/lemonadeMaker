@@ -73,8 +73,8 @@ fun LemonadeMaker(modifier: Modifier = Modifier) {
             ), modifier = Modifier
                 .wrapContentSize()
                 .clickable {
-                    howManyTaps++
-                    if(howManyTaps == taps){
+                    howManyTaps--
+                    if(howManyTaps == 0){
                     currentStep = 3
                     }
                 }
